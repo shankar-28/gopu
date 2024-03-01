@@ -1,0 +1,64 @@
+#include<stdio.>
+#define Max_processes 10
+#define Max_Resources 10
+int main (){
+int no_of_resources,process;
+int instance[Max_Resources], allocated[Max_processes][Max_Resources];
+int need[max_Processes][Max_resources],max[MAxprocesses][max_resources];
+int availability[max_resources],p[max_processes],op[max_Processes];
+int cnt =0,i,j,k=0;
+printf("enter no of resources");
+scanf("%d", &no of resources);
+
+printf("\n enter the max instances of the each resource:\n");
+for(i=0; i<no_of resources; i++){
+printf("%c =",(i+97));
+scanf("%d",&instance[i]);
+}
+printf("\n enter the no of processes:");
+scanf("%d", &process);
+printtf(("\n enter the no allocatin matrix:\n");
+for(i=0; I<process; i++){
+p[i]=i;
+printf("p[%d]",p[i]);
+for(j=0; j<no_of resources;j++){
+scanf("%d",&allocated[i][j]);
+ availability[j]+= allcolated[i][j];
+}
+}
+printf("\n enter the max matrix");
+for(i=0:i<process; i++){
+printf("p[%d]",i);
+for(j=0; j<no_of resources;j++){
+scanf("%d",&max[i][j]):
+   need[i][j]=max[i][j]-allocated[i][j];
+availability[j]= instance[j]-availability[j];
+}
+}
+for(i=0; i<process;i++){
+cnt =0;
+for(j=0; j<no_of resources;j++){
+if(need[i][j]<=availability[j]){
+cnt++;
+}
+}
+if(cnt==no_of_resources){
+op[k++}=p[i];
+for(j=0; j<no_of_resources;j++){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
